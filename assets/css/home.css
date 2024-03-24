@@ -1,0 +1,347 @@
+@import url("./base.css");
+
+.full-hero {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(180deg, rgba(23.02,19.89,19.89,0.86) 99.99%,rgba(255,255,255,0) 100%);
+}
+
+.backdrop .header {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 12px;
+}
+
+.backdrop .header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.backdrop .header nav ul li a {
+    font-size: 15px;
+    color: var(--white);
+
+    transition: all ease-in 0.2s;
+}
+
+.backdrop .header nav ul li a:hover {
+    color: var(--orange);
+}
+
+.backdrop .action {
+    position: relative;
+}
+
+.backdrop .action a sub{
+    position: absolute;
+
+    bottom: -6px;
+    left: -3px;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: var(--white);
+
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop .hero {
+    margin-left: 20px;
+    margin-top: 66px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.backdrop .hero h1 {
+    color: var(--white);
+    font-size: 57px;
+    width: 569px;
+
+    font-weight: var(--weight-bold);
+
+    margin-bottom: 18px;
+}
+
+.backdrop .hero p {
+    font-size: 18px;
+    font-weight: var(--weight-regular);
+    color: var(--gray-100);
+
+    width: 472px;
+
+    margin-bottom: 32px;
+
+    line-height: 24px;
+}
+
+.backdrop .btn-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.backdrop .btn-group a {
+    padding: 12px 16px;
+    color: var(--white);
+    font-weight: var(--weight-bold);
+    border: 1px solid var(--orange);
+
+    border-radius: 42px;
+
+    transition: all ease-in-out 0.2s;
+}
+
+.backdrop .btn-group a:not(.default):hover {
+    background-color: var(--orange); 
+}
+
+.backdrop .btn-group a.default {
+    background-color: var(--orange); 
+}
+
+.backdrop .btn-group a.default:hover {
+    background-color: transparent;
+    border: 1px solid var(--orange);
+}
+
+
+/* KNOW MATERIALS  */
+
+.know-materials {
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+
+.know-materials .container {
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+}
+
+.know-materials .container .know-material-content-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.know-materials .container .know-material-content-left h2 {
+    font-family: var(--jost-font);
+    font-weight: var(--weight-medium);
+    
+    font-size: 28px;
+    line-height: 30px;
+
+    width: 152px;
+    color: var(--dark);
+
+    margin-bottom: 32px;
+}
+
+.know-materials .container .know-material-content-left p {
+    font-family: var(--jost-font);
+    font-weight: var(--weight-medium);
+
+    line-height: 24px;
+    font-size: 14px;
+
+    color: var(--gray-200);    
+
+    margin-bottom: 32px;
+}
+
+.know-materials .container .know-material-content-left a {    
+    background-color: var(--orange);
+}
+
+.know-materials .container .materials-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.know-materials .container .materials-cards .card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    width: 190px;
+}
+
+.know-materials .container .materials-cards .card img {
+    width: 100%;
+}
+
+.know-materials .container .materials-cards .card .card-content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.know-materials .container .materials-cards .card .card-content span {
+    color: var(--orange);
+}
+
+/* CHOOSE US */
+
+.chosse-us {
+    margin-bottom: 124px;
+}
+
+.chosse-us .container {
+    display: flex;    
+    gap: 86px;
+}
+
+.chosse-us .chosse-content-left {
+    display: flex;
+    flex-direction: column;
+
+    gap: 44px;
+}
+
+.chosse-us .chosse-content-left header {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.chosse-us .chosse-content-left header h2 {
+    font-size: 28px;
+    width: 221px;
+}
+
+.chosse-us .chosse-content-left header p {
+    width: 538px;
+    color: var(--gray-200);
+    line-height: 22px;
+
+    font-family: var(--jost-font);
+    font-weight: var(--weight-medium);
+    color: var(--gray-200);    
+}
+
+.chosse-us .chosse-content-right img {
+    width: 520px;
+    height: 460px;
+}
+
+.chosse-us .chosse-content-left .ideias {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px;    
+
+    font-size: 14px; 
+}
+
+.chosse-us .chosse-content-left .ideias li {
+    width: 204px;
+}
+
+.chosse-us .chosse-content-left .ideias li span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dark);    
+}
+
+.chosse-us .chosse-content-left .ideias li p {
+    font-family: var(--jost-font);
+    font-weight: var(--weight-medium);
+    color: var(--gray-200);    
+}
+
+/* EVENTS */
+
+.events {
+    margin-bottom: 82px;
+}
+
+.events .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.events .container .events-content-left img {
+    width: 515px;
+    height: 493px;
+}
+
+.events .container .events-content-right header {
+    display: flex;
+    flex-direction: column;
+}
+
+.events .container .events-content-right header h2 {
+    font-size: 27px;
+    font-family: var(--jost-font);
+    font-weight: var(--weight-medium);
+
+    width: 331px;
+
+    margin-bottom: 24px;
+}
+
+.events .container .events-content-right header p {
+    font-size: 14px;
+    font-family: var(--jost-font);
+    font-weight: var(--weight-medium);
+    color: var(--gray-200);    
+
+    width: 520px;
+
+    margin-bottom: 24px;
+}
+
+.events .container .events-content-right ul {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 32px;     
+}
+
+.events .container .events-content-right ul li {
+    width: 248px;
+    font-family: var(--jost-font);
+    font-weight: var(--weight-medium);
+    color: var(--gray-200);   
+}
+
+.events .container .events-content-right div {
+    display: inline-block;
+    margin-top: 42px;
+}
+
+.events .container .events-content-right div a {
+    background-color: var(--orange);
+}
